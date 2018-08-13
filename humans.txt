@@ -1,0 +1,10 @@
+/* TEAM */
+e-Legion
+
+/* THANKS */
+Everyone working at e-Legion: testing, consulting and just being around
+Open source programmers: you all are awesome
+
+/* SITE */
+Language: English / Russian
+Contact: sales@e-legion.com
