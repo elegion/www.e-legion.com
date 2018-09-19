@@ -484,7 +484,9 @@ function Carousel() {
     clone.querySelector(".carousel-control-prev").href = "#" + clone.id;
     clone.querySelector(".carousel-control-next").href = "#" + clone.id;
     clone.classList.remove("d-none");
-    clone.classList.add.apply(clone.classList, classes);
+    for (var i = 0; i < classes.length; i++) {
+      clone.classList.add(classes[i]);
+    }
     split(clone, by);
     carousel.parentNode.insertBefore(clone, carousel);
   }
