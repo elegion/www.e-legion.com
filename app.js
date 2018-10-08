@@ -828,6 +828,10 @@ module.exports = Education;
 var utils = require("./utils");
 
 function Faq(container) {
+  var shouldToggle = false;
+  var startX = 0;
+  var startY = 0;
+
   function init() {
     initFaq();
     initRandomQuestion();
@@ -837,16 +841,35 @@ function Faq(container) {
     if (!container) {
       return;
     }
+    document.addEventListener("mousemove", function (event) {
+      if (!shouldToggle) {
+        return;
+      }
+      if (Math.abs(event.pageX - startX) > 5 || Math.abs(event.pageY - startY) > 5) {
+        shouldToggle = false;
+      }
+    });
     var items = container.querySelectorAll(".js-faq-item");
 
     var _loop = function _loop(item) {
-      var a = item.querySelector(".faq-answer");
-      a.classList.add("collapse");
-      $(a).on("show.bs.collapse", function () {
-        item.classList.add("show");
+      var answer = item.querySelector(".faq-answer");
+      answer.classList.add("collapse");
+      item.addEventListener("mousedown", function (event) {
+        shouldToggle = true;
+        startX = event.pageX;
+        startY = event.pageY;
       });
-      $(a).on("hide.bs.collapse", function () {
-        item.classList.remove("show");
+      item.addEventListener("mouseup", function () {
+        if (!shouldToggle) {
+          return;
+        }
+        if (item.classList.contains("show")) {
+          item.classList.remove("show");
+          answer.classList.add("collapse");
+        } else {
+          item.classList.add("show");
+          answer.classList.remove("collapse");
+        }
       });
     };
 
