@@ -1315,6 +1315,7 @@ function Projects(container) {
   function init() {
     initYearFilter();
     initTagFilter();
+    applyInitialFilter();
     placeBecome();
   }
 
@@ -1405,6 +1406,14 @@ function Projects(container) {
     }
 
     placeBecome();
+    // Store filter in location to restore on reload.
+    window.location.hash = "#!" + selectedPeriod + "/" + selectedTag;
+  }
+
+  function applyInitialFilter() {
+    if (selectedPeriod || selectedTag) {
+      applyFilters();
+    }
   }
 
   function initYearFilter() {
@@ -1452,6 +1461,8 @@ function Projects(container) {
 
         option.addEventListener("click", onOptionClick);
       }
+
+      // Set initial year filter from hashbang.
     } catch (err) {
       _didIteratorError3 = true;
       _iteratorError3 = err;
@@ -1463,6 +1474,20 @@ function Projects(container) {
       } finally {
         if (_didIteratorError3) {
           throw _iteratorError3;
+        }
+      }
+    }
+
+    var params = utils.parseHashBang(window.location.hash);
+    if (params) {
+      selectedPeriod = params[0];
+      for (var i = 0, len = periodSelectDefault.length; i < len; i++) {
+        var _option = periodSelectDefault[i];
+        if (_option.value === selectedPeriod) {
+          periodSelectDefault.selectedIndex = i;
+          periodSelectDefaultLabel.innerText = _option.innerText;
+          periodSelectCustomLabel.innerText = _option.innerText;
+          break;
         }
       }
     }
@@ -1513,6 +1538,8 @@ function Projects(container) {
 
         tag.addEventListener("click", onTagClick);
       }
+
+      // Set initial tag filter from hashbang.
     } catch (err) {
       _didIteratorError5 = true;
       _iteratorError5 = err;
@@ -1524,6 +1551,38 @@ function Projects(container) {
       } finally {
         if (_didIteratorError5) {
           throw _iteratorError5;
+        }
+      }
+    }
+
+    var params = utils.parseHashBang(window.location.hash);
+    if (params) {
+      selectedTag = params[1];
+      var _iteratorNormalCompletion6 = true;
+      var _didIteratorError6 = false;
+      var _iteratorError6 = undefined;
+
+      try {
+        for (var _iterator6 = tags[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {
+          var _tag = _step6.value;
+
+          _tag.classList.remove("active");
+          if (_tag.textContent === selectedTag) {
+            _tag.classList.add("active");
+          }
+        }
+      } catch (err) {
+        _didIteratorError6 = true;
+        _iteratorError6 = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion6 && _iterator6.return) {
+            _iterator6.return();
+          }
+        } finally {
+          if (_didIteratorError6) {
+            throw _iteratorError6;
+          }
         }
       }
     }
@@ -1598,11 +1657,21 @@ function nFormatter(num, digits) {
   return (num / si[i].value).toFixed(digits).replace(rx, "$1") + si[i].symbol;
 }
 
+function parseHashBang(hash) {
+  if (hash.indexOf("#!") !== 0) {
+    return null;
+  }
+  var paramStr = hash.slice(2);
+  var params = paramStr.split("/");
+  return params;
+}
+
 module.exports = {
   objToQuery: objToQuery,
   getRandomInt: getRandomInt,
   htmlToElement: htmlToElement,
-  nFormatter: nFormatter
+  nFormatter: nFormatter,
+  parseHashBang: parseHashBang
 };
 
 },{}],14:[function(require,module,exports){
