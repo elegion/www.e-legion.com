@@ -1407,7 +1407,7 @@ function Projects(container) {
 
     placeBecome();
     // Store filter in location to restore on reload.
-    window.location.hash = "#!" + selectedPeriod + "/" + selectedTag;
+    window.location.hash = "#!" + selectedPeriod + "/" + encodeURIComponent(selectedTag);
   }
 
   function applyInitialFilter() {
@@ -1662,7 +1662,9 @@ function parseHashBang(hash) {
     return null;
   }
   var paramStr = hash.slice(2);
-  var params = paramStr.split("/");
+  var params = paramStr.split("/").map(function (x) {
+    return decodeURIComponent(x);
+  });
   return params;
 }
 
