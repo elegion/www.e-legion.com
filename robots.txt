@@ -4,3 +4,5 @@ Disallow:
 User-Agent: Yandex
 Disallow:
 Host: www.e-legion.com
+
+Sitemap: https://www.e-legion.com/sitemap.xml
