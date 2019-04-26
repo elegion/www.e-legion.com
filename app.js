@@ -1335,6 +1335,10 @@ module.exports = Navbar;
 var scrollToElement = require('./scrollToElement');
 
 function NpsPage(container) {
+  if (!container) {
+    return;
+  }
+
   var controls = container.querySelectorAll('.js-rating-control');
 
   var onControlSclick = function onControlSclick(e) {
@@ -1405,7 +1409,9 @@ function NpsPage(container) {
   }
 
   function goToSuccess() {
-    window.location.href = 'success/';
+    setTimeout(function () {
+      window.location.href = 'success/';
+    }, 50);
   }
 }
 
