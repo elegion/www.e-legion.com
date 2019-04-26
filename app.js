@@ -1402,16 +1402,13 @@ function NpsPage(container) {
     });
   });
 
-  // Отправка формы
-  var googleForm = container.querySelector('.js-google-form');
-  if (googleForm) {
-    googleForm.addEventListener("submit", goToSuccess);
+  var iframe = container.querySelector('#response_iframe');
+  if (iframe) {
+    iframe.addEventListener('load', goToSuccess);
   }
 
   function goToSuccess() {
-    setTimeout(function () {
-      window.location.href = 'success/';
-    }, 50);
+    window.location.href = 'success/';
   }
 }
 
