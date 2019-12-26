@@ -957,6 +957,10 @@ module.exports = Faq;
 var defaultRequiredErrorMsg = 'Заполните поле';
 
 function FormValidation(form) {
+  if (!form) {
+    return;
+  }
+
   function getInputs() {
     return form.querySelectorAll('input, textarea');
   }
