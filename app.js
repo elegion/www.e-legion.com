@@ -1602,65 +1602,68 @@ function Projects(container) {
   function initYearFilter() {
     var periodSelectDefaultLabel = document.querySelector(".js-period-select-default-label");
     var periodSelectDefault = document.querySelector(".js-period-select-default-dropdown");
-    periodSelectDefault.addEventListener("click", function () {
-      periodSelectDefaultLabel.classList.add("active");
-    });
-    periodSelectDefault.addEventListener("change", function () {
-      var option = this.selectedOptions[0];
-      periodSelectDefaultLabel.classList.remove("active");
-      periodSelectDefaultLabel.innerText = option.innerText;
-      selectedPeriod = option.value;
-      applyFilters();
-    });
+    if (periodSelectDefault && periodSelectDefaultLabel) {
+      periodSelectDefault.addEventListener("click", function () {
+        periodSelectDefaultLabel.classList.add("active");
+      });
+      periodSelectDefault.addEventListener("change", function () {
+        var option = this.selectedOptions[0];
+        periodSelectDefaultLabel.classList.remove("active");
+        periodSelectDefaultLabel.innerText = option.innerText;
+        selectedPeriod = option.value;
+        applyFilters();
+      });
+    }
 
     var periodSelectCustomLabel = document.querySelector(".js-period-select-custom-label");
     var periodSelectCustom = document.querySelector(".js-period-select-custom-dropdown");
-    var hideDropdown = function hideDropdown() {
-      periodSelectCustomLabel.classList.remove("active");
-      periodSelectCustom.classList.add("hidden");
-      document.removeEventListener("click", hideDropdown);
-    };
-    var showDropdown = function showDropdown(event) {
-      periodSelectCustomLabel.classList.add("active");
-      periodSelectCustom.classList.remove("hidden");
-      event.stopPropagation();
-      document.addEventListener("click", hideDropdown);
-    };
-    var onOptionClick = function onOptionClick() {
-      periodSelectCustomLabel.innerText = this.innerText;
-      selectedPeriod = this.dataset.value;
-      applyFilters();
-    };
-    periodSelectCustomLabel.addEventListener("click", function (event) {
-      showDropdown(event);
-    });
-    var _iteratorNormalCompletion3 = true;
-    var _didIteratorError3 = false;
-    var _iteratorError3 = undefined;
+    if (periodSelectCustom && periodSelectCustomLabel) {
+      var hideDropdown = function hideDropdown() {
+        periodSelectCustomLabel.classList.remove("active");
+        periodSelectCustom.classList.add("hidden");
+        document.removeEventListener("click", hideDropdown);
+      };
+      var showDropdown = function showDropdown(event) {
+        periodSelectCustomLabel.classList.add("active");
+        periodSelectCustom.classList.remove("hidden");
+        event.stopPropagation();
+        document.addEventListener("click", hideDropdown);
+      };
+      var onOptionClick = function onOptionClick() {
+        periodSelectCustomLabel.innerText = this.innerText;
+        selectedPeriod = this.dataset.value;
+        applyFilters();
+      };
+      periodSelectCustomLabel.addEventListener("click", function (event) {
+        showDropdown(event);
+      });
+      var _iteratorNormalCompletion3 = true;
+      var _didIteratorError3 = false;
+      var _iteratorError3 = undefined;
 
-    try {
-      for (var _iterator3 = periodSelectCustom.querySelectorAll("div")[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-        var option = _step3.value;
-
-        option.addEventListener("click", onOptionClick);
-      }
-
-      // Set initial year filter from hashbang.
-    } catch (err) {
-      _didIteratorError3 = true;
-      _iteratorError3 = err;
-    } finally {
       try {
-        if (!_iteratorNormalCompletion3 && _iterator3.return) {
-          _iterator3.return();
+        for (var _iterator3 = periodSelectCustom.querySelectorAll("div")[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+          var option = _step3.value;
+
+          option.addEventListener("click", onOptionClick);
         }
+      } catch (err) {
+        _didIteratorError3 = true;
+        _iteratorError3 = err;
       } finally {
-        if (_didIteratorError3) {
-          throw _iteratorError3;
+        try {
+          if (!_iteratorNormalCompletion3 && _iterator3.return) {
+            _iterator3.return();
+          }
+        } finally {
+          if (_didIteratorError3) {
+            throw _iteratorError3;
+          }
         }
       }
     }
 
+    // Set initial year filter from hashbang.
     var params = utils.parseHashBang(window.location.hash);
     if (params) {
       selectedPeriod = params[0];
