@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="359" height="212" viewBox="0 0 359 212">
+    <defs>
+        <filter id="prefix__a" width="107.6%" height="113.3%" x="-3.8%" y="-5.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0"/>
+        </filter>
+        <path id="prefix__b" d="M16 0h311c8.837 0 16 7.163 16 16v118.402c0 7.426-2.95 14.548-8.201 19.799l-34.77 34.77c-4.5 4.5-10.605 7.029-16.97 7.029H16c-8.837 0-16-7.163-16-16V16C0 7.163 7.163 0 16 0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero" transform="translate(8 6)">
+            <use fill="#000" filter="url(#prefix__a)" xlink:href="#prefix__b"/>
+            <use fill="#1F2229" xlink:href="#prefix__b"/>
+        </g>
+        <g fill="#FFF">
+            <text font-family="Tele2TextSansSHORT-Regular, Tele2 TextSans SHORT" font-size="15" transform="translate(8 6) translate(16 20)">
+                <tspan x="0" y="33">+7 977 872-09-09</tspan>
+            </text>
+            <text font-family="Tele2TextSansSHORT-Regular, Tele2 TextSans SHORT" font-size="12" transform="translate(8 6) translate(16 20)">
+                <tspan x="0" y="13">Иванов Николай Сергеевич</tspan>
+            </text>
+            <text font-family="Tele2DisplaySerifWebSHORT-Bold, Tele2 DisplaySerif Web SHORT" font-size="20" font-weight="bold" transform="translate(8 6) translate(16 20)">
+                <tspan x="258" y="30">350 ₽</tspan>
+            </text>
+        </g>
+        <g>
+            <text fill="#FFF" font-family="Tele2TextSansSHORT-Regular, Tele2 TextSans SHORT" font-size="12" transform="translate(8 6) translate(142 73)">
+                <tspan x="0" y="13">Гигабайт</tspan>
+            </text>
+            <text fill="#EDEDF4" font-family="Tele2DisplaySerifWebSHORT-Bold, Tele2 DisplaySerif Web SHORT" font-size="20" font-weight="bold" transform="translate(8 6) translate(142 73)">
+                <tspan x="0" y="36">23</tspan>
+            </text>
+        </g>
+        <path d="M16 122H283V184H16z" transform="translate(8 6)"/>
+        <g font-family="Tele2TextSansSHORT-Regular, Tele2 TextSans SHORT">
+            <text fill="#FFF" font-size="12" transform="translate(8 6) translate(16 134)">
+                <tspan x="0" y="34">Списание за тариф 23 февраля</tspan>
+            </text>
+            <text fill="#FFF" font-size="15" transform="translate(8 6) translate(16 134)">
+                <tspan x="0" y="17">Мой онлайн+</tspan>
+            </text>
+        </g>
+        <g>
+            <text fill="#FFF" font-family="Tele2TextSansSHORT-Regular, Tele2 TextSans SHORT" font-size="12" transform="translate(8 6) translate(16 73)">
+                <tspan x="0" y="13">Минут</tspan>
+            </text>
+            <text fill="#EDEDF4" font-family="Tele2DisplaySerifWebSHORT-Bold, Tele2 DisplaySerif Web SHORT" font-size="20" font-weight="bold" transform="translate(8 6) translate(16 73)">
+                <tspan x="0" y="36">150</tspan>
+            </text>
+        </g>
+        <g>
+            <text fill="#FFF" font-family="Tele2TextSansSHORT-Regular, Tele2 TextSans SHORT" font-size="12" transform="translate(8 6) translate(259 73)">
+                <tspan x="0" y="13">SMS</tspan>
+            </text>
+            <text fill="#EDEDF4" font-family="Tele2DisplaySerifWebSHORT-Bold, Tele2 DisplaySerif Web SHORT" font-size="20" font-weight="bold" transform="translate(8 6) translate(259 73)">
+                <tspan x="0" y="36">235</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
