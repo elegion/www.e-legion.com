@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="213" height="588" viewBox="0 0 213 588">
+  <defs>
+    <radialGradient id="c" cx="100%" cy="-8.52%" r="100%" fx="100%" fy="-8.52%">
+      <stop offset="0%" stop-color="#FD290D"/>
+      <stop offset="31.722%" stop-color="#F8A61A"/>
+      <stop offset="100%" stop-color="#F8A91A"/>
+    </radialGradient>
+    <radialGradient id="d" cx="109.058%" cy="112.243%" r="195.995%" fx="109.058%" fy="112.243%" gradientTransform="scale(-.47696 -1) rotate(37.05 2.752 -5.04)">
+      <stop offset="0%" stop-color="#FD290D"/>
+      <stop offset="31.722%" stop-color="#F8A61A"/>
+      <stop offset="100%" stop-color="#F8A91A"/>
+    </radialGradient>
+    <radialGradient id="e" cx="0%" cy="-10.647%" r="952.651%" fx="0%" fy="-10.647%" gradientTransform="matrix(.10497 .14019 -.99448 .0148 -.106 -.105)">
+      <stop offset="0%" stop-color="#F8A71A"/>
+      <stop offset="100%" stop-color="#4AD15C"/>
+      <stop offset="100%" stop-color="#51DB5C"/>
+    </radialGradient>
+    <radialGradient id="f" cx="102.953%" cy="-10.869%" r="158.528%" fx="102.953%" fy="-10.869%" gradientTransform="scale(-.5556 -1) rotate(-49.563 -.176 3.122)">
+      <stop offset="0%" stop-color="#4DDA5C"/>
+      <stop offset="100%" stop-color="#EBEBEB"/>
+    </radialGradient>
+    <path id="a" d="M0 0h213v588H0z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <mask id="b" fill="#fff">
+      <use xlink:href="#a"/>
+    </mask>
+    <g mask="url(#b)">
+      <g stroke-width="30" transform="translate(-385 9.5)">
+        <circle cx="284" cy="283" r="217" stroke="#EBEBEB"/>
+        <circle cx="283" cy="283" r="283" stroke="#EBEBEB"/>
+        <g stroke-linecap="round">
+          <path stroke="url(#c)" d="M1 500c119.846 0 217-97.154 217-217" transform="translate(283)"/>
+          <path stroke="url(#d)" d="M219.948 104.907C168.063 40.907 88.808 0 0 0" transform="translate(283)"/>
+          <path stroke="url(#e)" d="M273.741 405.938c0-27.328-3.873-53.75-11.1-78.749" transform="rotate(25 409.69 1004.828)"/>
+          <path stroke="url(#f)" d="M1 566c101.432 0 190.4-53.363 240.363-133.547" transform="translate(283)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

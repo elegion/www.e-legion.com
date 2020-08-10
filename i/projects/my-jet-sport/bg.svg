@@ -1,0 +1,291 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 2250 460" xml:space="preserve" enable-background="new 0 0 2250 460">
+  <style>
+    .st2{fill-rule:evenodd;clip-rule:evenodd;fill:#fff}.st34{fill:none;stroke:#fff;stroke-width:3}
+  </style>
+  <g id="My-Jet-Sport">
+    <g id="My-Jet-Sport-Element" transform="translate(-65 -2980)">
+      <g id="BG-Top" transform="translate(65 2980)">
+        <g id="Mask">
+          <path id="path-1_1_" fill-rule="evenodd" clip-rule="evenodd" fill="#ffb400" d="M0 0h2250v460H0z"/>
+        </g>
+        <defs>
+          <filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="-24" y="0" width="2312" height="460">
+            <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+          </filter>
+        </defs>
+        <mask maskUnits="userSpaceOnUse" x="-24" y="0" width="2312" height="460" id="mask-2_1_">
+          <g filter="url(#Adobe_OpacityMaskFilter)">
+            <path id="path-1_2_" class="st2" d="M0 0h2250v460H0z"/>
+          </g>
+        </mask>
+        <radialGradient id="Rectangle_3_" cx="825.503" cy="649.705" r="4.167" gradientTransform="matrix(437.6003 -141.796 -141.7961 -437.6002 -268349.281 401982.281)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#ff0a0a"/>
+          <stop offset=".35" stop-color="#fb6813"/>
+          <stop offset="1" stop-color="#f6ca1d"/>
+          <stop offset="1" stop-color="#f8a519"/>
+        </radialGradient>
+        <path id="Rectangle" mask="url(#mask-2_1_)" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle_3_)" d="M-24 0h2312v460H-24z"/>
+        <defs>
+          <filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="1159" y="-16" width="768" height="768">
+            <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+          </filter>
+        </defs>
+        <mask maskUnits="userSpaceOnUse" x="1159" y="-16" width="768" height="768" id="mask-2_2_">
+          <g filter="url(#Adobe_OpacityMaskFilter_1_)">
+            <path id="path-1_3_" class="st2" d="M0 0h2250v460H0z"/>
+          </g>
+        </mask>
+        <path id="Combined-Shape" d="M1543-16c212.1 0 384 171.9 384 384s-171.9 384-384 384-384-171.9-384-384 171.9-384 384-384zm0 176c-114.9 0-208 93.1-208 208s93.1 208 208 208 208-93.1 208-208-93.1-208-208-208z" opacity=".3" mask="url(#mask-2_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#fff" enable-background="new"/>
+        <defs>
+          <filter id="Adobe_OpacityMaskFilter_2_" filterUnits="userSpaceOnUse" x="986" y="-9" width="391" height="487">
+            <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+          </filter>
+        </defs>
+        <mask maskUnits="userSpaceOnUse" x="986" y="-9" width="391" height="487" id="mask-2_4_">
+          <g filter="url(#Adobe_OpacityMaskFilter_2_)">
+            <path id="path-1_5_" class="st2" d="M0 0h2250v460H0z"/>
+          </g>
+        </mask>
+        <g id="Group-5" opacity=".5" mask="url(#mask-2_4_)">
+          <g transform="translate(986 -9)">
+            <radialGradient id="Rectangle_4_" cx="-149.405" cy="620.509" r="8.732" gradientTransform="matrix(0 21.0001 21 0 -13020.185 3439.514)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset="1" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle_1_" d="M10.5 302c5.8 0 10.5 4.7 10.5 10.5v164c0 5.8-4.7 10.5-10.5 10.5S0 482.3 0 476.5v-164c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle_4_)"/>
+            <radialGradient id="Rectangle-Copy-3_2_" cx="-149.405" cy="620.509" r="6.571" gradientTransform="matrix(0 21 21 0 -12980.185 3486.502)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-3" d="M50.5 349c5.8 0 10.5 4.7 10.5 10.5v117c0 5.8-4.7 10.5-10.5 10.5S40 482.3 40 476.5v-117c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-3_2_)"/>
+            <radialGradient id="Rectangle-Copy-4_2_" cx="-149.405" cy="620.509" r="2.286" gradientTransform="matrix(0 21 21 0 -12939.185 3576.5)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-4" d="M91.5 439c5.8 0 10.5 4.7 10.5 10.5v27c0 5.8-4.7 10.5-10.5 10.5S81 482.3 81 476.5v-27c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-4_2_)"/>
+            <radialGradient id="Rectangle-Copy-15_2_" cx="-149.405" cy="620.509" r="11.429" gradientTransform="matrix(0 21 21 0 -12898.185 3384.5)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".902" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-15" d="M132.5 247c5.8 0 10.5 4.7 10.5 10.5v219c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5v-219c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-15_2_)"/>
+            <radialGradient id="Rectangle-Copy-16_2_" cx="-149.405" cy="620.509" r="12.571" gradientTransform="matrix(0 20.9999 21 0 -12857.185 3360.481)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-16" d="M173.5 223c5.8 0 10.5 4.7 10.5 10.5v243c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5v-243c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-16_2_)"/>
+            <radialGradient id="Rectangle-Copy-17_2_" cx="-149.405" cy="620.509" r="23.191" gradientTransform="matrix(0 20.9999 21 0 -12817.185 3137.488)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-17" d="M213.5 0c5.8 0 10.5 4.7 10.5 10.5v466c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5v-466C203 4.7 207.7 0 213.5 0z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-17_2_)"/>
+            <radialGradient id="Rectangle-Copy-18_2_" cx="-149.405" cy="620.509" r="20.524" gradientTransform="matrix(0 21 21 0 -12776.185 3193.507)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-18" d="M254.5 56c5.8 0 10.5 4.7 10.5 10.5v410c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5v-410c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-18_2_)"/>
+            <radialGradient id="Rectangle-Copy-19_2_" cx="-149.405" cy="620.509" r="13.952" gradientTransform="matrix(0 20.9999 21 0 -12736.185 3331.483)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-19" d="M294.5 194c5.8 0 10.5 4.7 10.5 10.5v272c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5v-272c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-19_2_)"/>
+            <radialGradient id="Rectangle-Copy-20_2_" cx="-149.405" cy="620.509" r="6.571" gradientTransform="matrix(0 21 21 0 -12690.185 3486.502)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-20" d="M340.5 349c5.8 0 10.5 4.7 10.5 10.5v117c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5v-117c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-20_2_)"/>
+            <radialGradient id="Rectangle-Copy-21_2_" cx="-149.405" cy="620.509" r="9.095" gradientTransform="matrix(0 21.0001 21 0 -12650.185 3433.511)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-21" d="M380.5 296c5.8 0 10.5 4.7 10.5 10.5v170c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5v-170c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-21_2_)"/>
+          </g>
+        </g>
+        <defs>
+          <filter id="Adobe_OpacityMaskFilter_3_" filterUnits="userSpaceOnUse" x="1554" y="-9" width="391" height="487">
+            <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+          </filter>
+        </defs>
+        <mask maskUnits="userSpaceOnUse" x="1554" y="-9" width="391" height="487" id="mask-2_5_">
+          <g filter="url(#Adobe_OpacityMaskFilter_3_)">
+            <path id="path-1_6_" class="st2" d="M0 0h2250v460H0z"/>
+          </g>
+        </mask>
+        <g id="Group-5-Copy" opacity=".5" mask="url(#mask-2_5_)">
+          <g transform="matrix(-1 0 0 1 1945 -9)">
+            <radialGradient id="Rectangle_5_" cx="1108.405" cy="699.271" r="8.732" gradientTransform="matrix(0 -21.0001 21 0 -14674.185 23578.6)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset="1" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle_2_" d="M10.5 302c5.8 0 10.5 4.7 10.5 10.5v164c0 5.8-4.7 10.5-10.5 10.5S0 482.3 0 476.5v-164c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle_5_)"/>
+            <radialGradient id="Rectangle-Copy-3_3_" cx="1108.405" cy="699.271" r="6.571" gradientTransform="matrix(0 -21 21 0 -14634.185 23625.514)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-3_1_" d="M50.5 349c5.8 0 10.5 4.7 10.5 10.5v117c0 5.8-4.7 10.5-10.5 10.5S40 482.3 40 476.5v-117c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-3_3_)"/>
+            <radialGradient id="Rectangle-Copy-4_3_" cx="1108.405" cy="699.271" r="2.286" gradientTransform="matrix(0 -21 21 0 -14593.185 23715.5)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-4_1_" d="M91.5 439c5.8 0 10.5 4.7 10.5 10.5v27c0 5.8-4.7 10.5-10.5 10.5S81 482.3 81 476.5v-27c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-4_3_)"/>
+            <radialGradient id="Rectangle-Copy-15_3_" cx="1108.405" cy="699.271" r="11.429" gradientTransform="matrix(0 -21 21 0 -14552.185 23523.5)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-15_1_" d="M132.5 247c5.8 0 10.5 4.7 10.5 10.5v219c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5v-219c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-15_3_)"/>
+            <radialGradient id="Rectangle-Copy-16_3_" cx="1108.405" cy="699.271" r="12.571" gradientTransform="matrix(0 -20.9999 21 0 -14511.185 23499.365)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-16_1_" d="M173.5 223c5.8 0 10.5 4.7 10.5 10.5v243c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5v-243c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-16_3_)"/>
+            <radialGradient id="Rectangle-Copy-17_3_" cx="1108.405" cy="699.271" r="23.191" gradientTransform="matrix(0 -20.9999 21 0 -14471.185 23276.416)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-17_1_" d="M213.5 0c5.8 0 10.5 4.7 10.5 10.5v466c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5v-466C203 4.7 207.7 0 213.5 0z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-17_3_)"/>
+            <radialGradient id="Rectangle-Copy-18_3_" cx="1108.405" cy="699.271" r="20.524" gradientTransform="matrix(0 -21 21 0 -14430.185 23332.549)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-18_1_" d="M254.5 56c5.8 0 10.5 4.7 10.5 10.5v410c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5v-410c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-18_3_)"/>
+            <radialGradient id="Rectangle-Copy-19_3_" cx="1108.405" cy="699.271" r="13.952" gradientTransform="matrix(0 -20.9999 21 0 -14390.185 23470.383)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-19_1_" d="M294.5 194c5.8 0 10.5 4.7 10.5 10.5v272c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5v-272c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-19_3_)"/>
+            <radialGradient id="Rectangle-Copy-20_3_" cx="1108.405" cy="699.271" r="6.571" gradientTransform="matrix(0 -21 21 0 -14344.185 23625.514)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-20_1_" d="M340.5 349c5.8 0 10.5 4.7 10.5 10.5v117c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5v-117c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-20_3_)"/>
+            <radialGradient id="Rectangle-Copy-21_3_" cx="1108.405" cy="699.271" r="9.095" gradientTransform="matrix(0 -21.0001 21 0 -14304.185 23572.576)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f88119"/>
+              <stop offset=".991" stop-color="#fd2c0d"/>
+            </radialGradient>
+            <path id="Rectangle-Copy-21_1_" d="M380.5 296c5.8 0 10.5 4.7 10.5 10.5v170c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5v-170c0-5.8 4.7-10.5 10.5-10.5z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Rectangle-Copy-21_3_)"/>
+          </g>
+        </g>
+        <defs>
+          <filter id="Adobe_OpacityMaskFilter_4_" filterUnits="userSpaceOnUse" x="1107" y="-68" width="872" height="872">
+            <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+          </filter>
+        </defs>
+        <mask maskUnits="userSpaceOnUse" x="1107" y="-68" width="872" height="872" id="mask-2_3_">
+          <g filter="url(#Adobe_OpacityMaskFilter_4_)">
+            <path id="path-1_4_" class="st2" d="M0 0h2250v460H0z"/>
+          </g>
+        </mask>
+        <circle id="Oval-Copy-2" cx="1543" cy="368" r="434" opacity=".3" mask="url(#mask-2_3_)" fill="none" stroke="#fff" stroke-width="4" enable-background="new"/>
+        <defs>
+          <filter id="Adobe_OpacityMaskFilter_5_" filterUnits="userSpaceOnUse" x="923" y="55" width="76" height="333">
+            <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+          </filter>
+        </defs>
+        <mask maskUnits="userSpaceOnUse" x="923" y="55" width="76" height="333" id="mask-2_6_">
+          <g filter="url(#Adobe_OpacityMaskFilter_5_)">
+            <path id="path-1_7_" class="st2" d="M0 0h2250v460H0z"/>
+          </g>
+        </mask>
+        <g id="Group-3" opacity=".367" mask="url(#mask-2_6_)">
+          <g transform="translate(923 55.5)">
+            <path id="Path-7" class="st34" d="M0 1h76"/>
+            <path id="Path-7-Copy" class="st34" d="M0 49h76"/>
+            <path id="Path-7-Copy-2" class="st34" d="M0 96h76"/>
+            <path id="Path-7-Copy-3" class="st34" d="M0 143h76"/>
+            <path id="Path-7_1_" class="st34" d="M0 190h76"/>
+            <path id="Path-7-Copy_1_" class="st34" d="M0 237h76"/>
+            <path id="Path-7-Copy-2_1_" class="st34" d="M0 284h76"/>
+            <path id="Path-7-Copy-3_1_" class="st34" d="M0 331h76"/>
+          </g>
+        </g>
+        <defs>
+          <filter id="Adobe_OpacityMaskFilter_6_" filterUnits="userSpaceOnUse" x="1776" y="55" width="76" height="333">
+            <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+          </filter>
+        </defs>
+        <mask maskUnits="userSpaceOnUse" x="1776" y="55" width="76" height="333" id="mask-2_7_">
+          <g filter="url(#Adobe_OpacityMaskFilter_6_)">
+            <path id="path-1_8_" class="st2" d="M0 0h2250v460H0z"/>
+          </g>
+        </mask>
+        <g id="Group-3-Copy-2" opacity=".367" mask="url(#mask-2_7_)">
+          <g transform="translate(1776 55.5)">
+            <path id="Path-7_2_" class="st34" d="M0 1h76"/>
+            <path id="Path-7-Copy_2_" class="st34" d="M0 49h76"/>
+            <path id="Path-7-Copy-2_2_" class="st34" d="M0 96h76"/>
+            <path id="Path-7-Copy-3_2_" class="st34" d="M0 143h76"/>
+            <path id="Path-7_3_" class="st34" d="M0 190h76"/>
+            <path id="Path-7-Copy_3_" class="st34" d="M0 237h76"/>
+            <path id="Path-7-Copy-2_3_" class="st34" d="M0 284h76"/>
+            <path id="Path-7-Copy-3_3_" class="st34" d="M0 331h76"/>
+          </g>
+        </g>
+        <defs>
+          <filter id="Adobe_OpacityMaskFilter_7_" filterUnits="userSpaceOnUse" x="2174" y="55" width="76" height="333">
+            <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+          </filter>
+        </defs>
+        <mask maskUnits="userSpaceOnUse" x="2174" y="55" width="76" height="333" id="mask-2_8_">
+          <g filter="url(#Adobe_OpacityMaskFilter_7_)">
+            <path id="path-1_9_" class="st2" d="M0 0h2250v460H0z"/>
+          </g>
+        </mask>
+        <g id="Group-3-Copy-4" opacity=".367" mask="url(#mask-2_8_)">
+          <g transform="translate(2174 55.5)">
+            <path id="Path-7_4_" class="st34" d="M0 1h76"/>
+            <path id="Path-7-Copy_4_" class="st34" d="M0 49h76"/>
+            <path id="Path-7-Copy-2_4_" class="st34" d="M0 96h76"/>
+            <path id="Path-7-Copy-3_4_" class="st34" d="M0 143h76"/>
+            <path id="Path-7_5_" class="st34" d="M0 190h76"/>
+            <path id="Path-7-Copy_5_" class="st34" d="M0 237h76"/>
+            <path id="Path-7-Copy-2_5_" class="st34" d="M0 284h76"/>
+            <path id="Path-7-Copy-3_5_" class="st34" d="M0 331h76"/>
+          </g>
+        </g>
+        <defs>
+          <filter id="Adobe_OpacityMaskFilter_8_" filterUnits="userSpaceOnUse" x="412" y="55" width="76" height="333">
+            <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+          </filter>
+        </defs>
+        <mask maskUnits="userSpaceOnUse" x="412" y="55" width="76" height="333" id="mask-2_9_">
+          <g filter="url(#Adobe_OpacityMaskFilter_8_)">
+            <path id="path-1_10_" class="st2" d="M0 0h2250v460H0z"/>
+          </g>
+        </mask>
+        <g id="Group-3-Copy" opacity=".367" mask="url(#mask-2_9_)">
+          <g transform="translate(412 55.5)">
+            <path id="Path-7_6_" class="st34" d="M0 1h76"/>
+            <path id="Path-7-Copy_6_" class="st34" d="M0 49h76"/>
+            <path id="Path-7-Copy-2_6_" class="st34" d="M0 96h76"/>
+            <path id="Path-7-Copy-3_6_" class="st34" d="M0 143h76"/>
+            <path id="Path-7_7_" class="st34" d="M0 190h76"/>
+            <path id="Path-7-Copy_7_" class="st34" d="M0 237h76"/>
+            <path id="Path-7-Copy-2_7_" class="st34" d="M0 284h76"/>
+            <path id="Path-7-Copy-3_7_" class="st34" d="M0 331h76"/>
+          </g>
+        </g>
+        <defs>
+          <filter id="Adobe_OpacityMaskFilter_9_" filterUnits="userSpaceOnUse" x="0" y="55" width="76" height="333">
+            <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+          </filter>
+        </defs>
+        <mask maskUnits="userSpaceOnUse" x="0" y="55" width="76" height="333" id="mask-2_10_">
+          <g filter="url(#Adobe_OpacityMaskFilter_9_)">
+            <path id="path-1_11_" class="st2" d="M0 0h2250v460H0z"/>
+          </g>
+        </mask>
+        <g id="Group-3-Copy-3" opacity=".367" mask="url(#mask-2_10_)">
+          <g transform="translate(0 55.5)">
+            <path id="Path-7_8_" class="st34" d="M0 1h76"/>
+            <path id="Path-7-Copy_8_" class="st34" d="M0 49h76"/>
+            <path id="Path-7-Copy-2_8_" class="st34" d="M0 96h76"/>
+            <path id="Path-7-Copy-3_8_" class="st34" d="M0 143h76"/>
+            <path id="Path-7_9_" class="st34" d="M0 190h76"/>
+            <path id="Path-7-Copy_9_" class="st34" d="M0 237h76"/>
+            <path id="Path-7-Copy-2_9_" class="st34" d="M0 284h76"/>
+            <path id="Path-7-Copy-3_9_" class="st34" d="M0 331h76"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
