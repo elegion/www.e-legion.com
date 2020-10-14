@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2250" height="460">
+  <defs>
+    <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCC10C"/>
+      <stop offset="100%" stop-color="#F88E05"/>
+    </linearGradient>
+    <path id="a" d="M0 0h2250v460H0z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <mask id="c" fill="#fff">
+      <use xlink:href="#a"/>
+    </mask>
+    <use fill="#FFB400" xlink:href="#a"/>
+    <path fill="url(#b)" d="M0 0h2250v460H0z" mask="url(#c)"/>
+    <circle cx="1708" cy="165" r="210" fill="#F47820" mask="url(#c)"/>
+    <circle cx="1357.5" cy="279.5" r="140.5" fill="#FFF" mask="url(#c)" opacity=".941"/>
+    <circle cx="1256.5" cy="179.5" r="40" fill="#02AC4E" mask="url(#c)"/>
+    <circle cx="540" cy="37" r="82" fill="#F47820" mask="url(#c)"/>
+    <circle fill="#FBAF19" opacity=".651" style="mix-blend-mode:hard-light" cx="1199.5" cy="507.5" r="247" mask="url(#c)"/>
+    <circle fill="#FEC001" style="mix-blend-mode:overlay" cx="1826" cy="338" r="82" mask="url(#c)"/>
+    <circle cx="611" cy="67" r="30" fill="#FFF" mask="url(#c)"/>
+  </g>
+</svg>
