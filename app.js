@@ -318,6 +318,31 @@ function onLoad() {
 
 onLoad();
 
+// Temp fix for fonts in ios 14
+function checkIosVersion() {
+  var agent = window.navigator.userAgent,
+      start = agent.indexOf('OS ');
+  if ((agent.indexOf('iPhone') > -1 || agent.indexOf('iPad') > -1) && start > -1) {
+    return window.Number(agent.substr(start + 3, 3).replace('_', '.'));
+  }
+  return 0;
+}
+function addStylesheet(url) {
+  var head = document.head;
+  var link = document.createElement("link");
+
+  link.type = "text/css";
+  link.rel = "stylesheet";
+  link.href = url;
+
+  head.appendChild(link);
+}
+
+if (checkIosVersion() >= 14 && document.documentElement.lang == "ru") {
+  addStylesheet('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+  document.body.classList.add("alternative-font");
+}
+
 },{"./about":1,"./bubbles":3,"./carousel":4,"./dragscroll":5,"./education":6,"./faq":7,"./formValidation":8,"./main":9,"./map":10,"./navbar":11,"./nps":12,"./projects":13,"./subscribe":15,"./vacancies":17,"./vacancy":18,"./video":19,"core-js/modules/es6.array.copy-within":131,"core-js/modules/es6.array.fill":132,"core-js/modules/es6.array.find":134,"core-js/modules/es6.array.find-index":133,"core-js/modules/es6.array.from":135,"core-js/modules/es6.array.iterator":136,"core-js/modules/es6.array.of":137,"core-js/modules/es6.function.name":138,"core-js/modules/es6.map":139,"core-js/modules/es6.math.acosh":140,"core-js/modules/es6.math.asinh":141,"core-js/modules/es6.math.atanh":142,"core-js/modules/es6.math.cbrt":143,"core-js/modules/es6.math.clz32":144,"core-js/modules/es6.math.cosh":145,"core-js/modules/es6.math.expm1":146,"core-js/modules/es6.math.fround":147,"core-js/modules/es6.math.hypot":148,"core-js/modules/es6.math.imul":149,"core-js/modules/es6.math.log10":150,"core-js/modules/es6.math.log1p":151,"core-js/modules/es6.math.log2":152,"core-js/modules/es6.math.sign":153,"core-js/modules/es6.math.sinh":154,"core-js/modules/es6.math.tanh":155,"core-js/modules/es6.math.trunc":156,"core-js/modules/es6.number.epsilon":157,"core-js/modules/es6.number.is-finite":158,"core-js/modules/es6.number.is-integer":159,"core-js/modules/es6.number.is-nan":160,"core-js/modules/es6.number.is-safe-integer":161,"core-js/modules/es6.number.max-safe-integer":162,"core-js/modules/es6.number.min-safe-integer":163,"core-js/modules/es6.object.assign":164,"core-js/modules/es6.object.freeze":165,"core-js/modules/es6.object.get-own-property-descriptor":166,"core-js/modules/es6.object.get-own-property-names":167,"core-js/modules/es6.object.get-prototype-of":168,"core-js/modules/es6.object.is":172,"core-js/modules/es6.object.is-extensible":169,"core-js/modules/es6.object.is-frozen":170,"core-js/modules/es6.object.is-sealed":171,"core-js/modules/es6.object.keys":173,"core-js/modules/es6.object.prevent-extensions":174,"core-js/modules/es6.object.seal":175,"core-js/modules/es6.promise":176,"core-js/modules/es6.reflect.apply":177,"core-js/modules/es6.reflect.construct":178,"core-js/modules/es6.reflect.define-property":179,"core-js/modules/es6.reflect.delete-property":180,"core-js/modules/es6.reflect.get":183,"core-js/modules/es6.reflect.get-own-property-descriptor":181,"core-js/modules/es6.reflect.get-prototype-of":182,"core-js/modules/es6.reflect.has":184,"core-js/modules/es6.reflect.is-extensible":185,"core-js/modules/es6.reflect.own-keys":186,"core-js/modules/es6.reflect.prevent-extensions":187,"core-js/modules/es6.reflect.set":189,"core-js/modules/es6.reflect.set-prototype-of":188,"core-js/modules/es6.regexp.flags":191,"core-js/modules/es6.regexp.match":192,"core-js/modules/es6.regexp.replace":193,"core-js/modules/es6.regexp.search":194,"core-js/modules/es6.regexp.split":195,"core-js/modules/es6.set":196,"core-js/modules/es6.string.code-point-at":197,"core-js/modules/es6.string.ends-with":198,"core-js/modules/es6.string.from-code-point":199,"core-js/modules/es6.string.includes":200,"core-js/modules/es6.string.raw":201,"core-js/modules/es6.string.repeat":202,"core-js/modules/es6.string.starts-with":203,"core-js/modules/es6.symbol":204,"core-js/modules/es6.typed.array-buffer":205,"core-js/modules/es6.typed.float32-array":206,"core-js/modules/es6.typed.float64-array":207,"core-js/modules/es6.typed.int16-array":208,"core-js/modules/es6.typed.int32-array":209,"core-js/modules/es6.typed.int8-array":210,"core-js/modules/es6.typed.uint16-array":211,"core-js/modules/es6.typed.uint32-array":212,"core-js/modules/es6.typed.uint8-array":213,"core-js/modules/es6.typed.uint8-clamped-array":214,"core-js/modules/es6.weak-map":215,"core-js/modules/es6.weak-set":216,"core-js/modules/es7.array.includes":217,"core-js/modules/es7.object.entries":218,"core-js/modules/es7.object.get-own-property-descriptors":219,"core-js/modules/es7.object.values":220,"core-js/modules/es7.string.pad-end":221,"core-js/modules/es7.string.pad-start":222,"core-js/modules/web.dom.iterable":223,"core-js/modules/web.immediate":224,"core-js/modules/web.timers":225,"regenerator-runtime/runtime":226}],3:[function(require,module,exports){
 "use strict";
 
