@@ -1,6 +1,9 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 "use strict";
 
+var buildCountText = require('./modules/build-count-text');
+var Cookies = require('./modules/cookies');
+
 function birthdayPage() {
   gallery();
   blocksShift();
@@ -11,7 +14,7 @@ function birthdayPage() {
 function blocksShift() {
   var shiftBreakpoiont = 767;
   function shiftCards() {
-    var $cards = $(".birthday-card:not(:first-child)");
+    var $cards = $(".birthday-card:not(:first-child):not(:last-child)");
     var prevMT = -150;
     $cards.each(function () {
       var $card = $(this);
@@ -21,6 +24,10 @@ function blocksShift() {
       var margin = 100 - prevH - prevMT;
       prevMT = margin;
       $card.css({ marginTop: margin + "px" });
+    });
+    $(".birthday-card:last-child").each(function () {
+      var h = $(this).height();
+      $(this).css({ marginTop: -h + "px" });
     });
   }
 
@@ -92,6 +99,40 @@ function baloonsParty() {
   var swingDelayMax = 3000;
   var animationInProgress = false;
 
+  var likes;
+  var likeUrl = $('meta[name="likes-url"]').attr("content");;
+  var likeKey = "birthday-likes";
+
+  function getLikesCount() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', likeUrl, true);
+    xhr.onload = function () {
+      if (this.status === 200) {
+        var response = JSON.parse(this.responseText);
+        likes = response.Data;
+      }
+    };
+    xhr.onerror = function () {
+      console.log("Error likes: network error");
+    };
+    xhr.send();
+  }
+
+  function sendLike() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', likeUrl, true);
+    xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+    xhr.onerror = function () {
+      console.log("Error likes: network error");
+    };
+    xhr.send();
+  }
+
+  function secureLikes() {
+    Cookies.set(likeKey, "true", { path: "/", 'max-age': 60 * 60 * 24 * 365 * 10 });
+    localStorage.setItem(likeKey, "true");
+  }
+
   function initBaloons() {
     $baloons.each(function () {
       var $baloon = $(this);
@@ -152,8 +193,23 @@ function baloonsParty() {
   $(".js-baloon-party").click(function () {
     if (!animationInProgress) {
       initBaloons();
-      var txt = $(this).data("altText");
+      var txt;
+      if (likes !== undefined) {
+        txt = $(this).data("countText");
+        txt = txt.replace("#COUNT#", buildCountText(likes + 1, "раз", "", "а", ""));
+      } else {
+        txt = $(this).data("altText");
+      }
       $(this).text(txt);
+
+      var votedCookie = Cookies.get(likeKey) === "true";
+      var votedStorage = localStorage.getItem(likeKey);
+      if (!votedCookie && !votedStorage) {
+        secureLikes();
+        sendLike();
+      } else if (!votedCookie && votedStorage || votedCookie && !votedStorage) {
+        secureLikes();
+      }
 
       animationInProgress = true;
       setTimeout(function () {
@@ -161,10 +217,75 @@ function baloonsParty() {
       }, timeToFly + Math.max(swingDelayMax, flyDelayMax));
     }
   });
+
+  getLikesCount();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
   birthdayPage();
 });
+
+},{"./modules/build-count-text":2,"./modules/cookies":3}],2:[function(require,module,exports){
+"use strict";
+
+function buildCountText(count, txtBase, txt1, txt2, txt5, showNum) {
+    showNum = showNum !== undefined ? showNum : true;
+    var str = '';
+    if (count <= 14 && count >= 5) {
+        str = txt5;
+    } else {
+        var num = count % 10;
+        if (num == 1) {
+            str = txt1;
+        } else if (num == 0) {
+            str = txt5;
+        } else if (num >= 2 && num <= 4) {
+            str = txt2;
+        } else if (num >= 5 && num <= 9) {
+            str = txt5;
+        } else {
+            str = txt5;
+        }
+    }
+    if (showNum) {
+        return count + " " + txtBase + str;
+    } else {
+        return txtBase + str;
+    }
+}
+
+module.exports = buildCountText;
+
+},{}],3:[function(require,module,exports){
+"use strict";
+
+var Cookies = {
+  get: function get(name) {
+    var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+  },
+
+  set: function set(name, value, options) {
+    options = options || {};
+
+    if (options.expires instanceof Date) {
+      options.expires = options.expires.toUTCString();
+    }
+
+    var updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+    for (var optionKey in options) {
+      updatedCookie += "; " + optionKey;
+      var optionValue = options[optionKey];
+      if (optionValue !== true) {
+        updatedCookie += "=" + optionValue;
+      }
+    }
+
+    document.cookie = updatedCookie;
+  }
+};
+
+module.exports = Cookies;
 
 },{}]},{},[1]);
