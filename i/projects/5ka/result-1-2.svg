@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="101" height="202" viewbox="0 0 101 202">
+  <defs>
+    <linearGradient id="r-1-2-a" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#80D40E"/>
+      <stop offset="100%" stop-color="#3DC40D"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="url(#r-1-2-a)" d="M12 32h76c6.627 0 12 5.373 12 12v158H0V44c0-6.627 5.373-12 12-12z" transform="translate(.973)"/>
+    <text fill="#FFF" font-family="Montserrat-Medium, Montserrat" font-size="18" font-weight="400" transform="translate(.973)">
+      <tspan x="27.077" y="188">100%</tspan>
+    </text>
+    <path d="M22.708 0c1.618 0 3.013 1.12 3.34 2.68l2.354 11.24h4c1.144 0 2.071.913 2.071 2.04S33.546 18 32.403 18H3.543c-1.143 0-2.07-.913-2.07-2.04s.927-2.04 2.07-2.04h3.288L9.373 2.632C9.72 1.094 11.103 0 12.703 0h10.006zm6.324 21a4.86 4.86 0 01.441 2.026c0 2.747-2.283 4.974-5.1 4.974-2.796 0-5.066-2.194-5.1-4.912h-3.6v.02C15.626 25.819 13.36 28 10.573 28c-2.817 0-5.1-2.227-5.1-4.974 0-.721.158-1.407.441-2.026h23.119z" fill="#73D10E"/>
+  </g>
+</svg>

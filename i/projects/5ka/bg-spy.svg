@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2250" height="460" viewBox="0 0 2250 460">
+    <defs>
+        <linearGradient id="6wfx18ymyc" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#646670"/>
+            <stop offset="100%" stop-color="#EEE" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="t9tmaocjmd" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#646670"/>
+            <stop offset="100%" stop-color="#EEE" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="qfd4b2cvre" x1="50%" x2="50%" y1="0%" y2="64.84%">
+            <stop offset="0%" stop-color="#646670"/>
+            <stop offset="100%" stop-color="#EEE" stop-opacity="0"/>
+        </linearGradient>
+        <path id="sz4p3zx2ua" d="M0 0H2250V460H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-62 -3298) translate(62 3298)">
+                <mask id="liv4hr12yb" fill="#fff">
+                    <use xlink:href="#sz4p3zx2ua"/>
+                </mask>
+                <use fill="#2A2C37" xlink:href="#sz4p3zx2ua"/>
+                <g mask="url(#liv4hr12yb)" opacity=".222">
+                    <g transform="matrix(-1 0 0 1 2221 261)">
+                        <circle cx="1559.5" cy="492.5" r="375.5" fill="url(#6wfx18ymyc)"/>
+                        <circle cx="1575" cy="109" r="39" fill="url(#6wfx18ymyc)"/>
+                        <circle cx="634" cy="109" r="39" fill="url(#6wfx18ymyc)"/>
+                        <ellipse cx="1846" cy="186" fill="url(#t9tmaocjmd)" rx="185" ry="186"/>
+                        <ellipse cx="1034" cy="306" fill="url(#t9tmaocjmd)" rx="185" ry="186"/>
+                        <ellipse cx="634" cy="306" fill="url(#t9tmaocjmd)" rx="185" ry="186"/>
+                        <ellipse cx="185" cy="306" fill="url(#t9tmaocjmd)" rx="185" ry="186"/>
+                        <circle cx="1468" cy="148" r="92" fill="url(#qfd4b2cvre)"/>
+                        <circle cx="2048" cy="186" r="92" fill="url(#qfd4b2cvre)"/>
+                        <circle cx="1020" cy="159" r="92" fill="url(#6wfx18ymyc)"/>
+                        <circle cx="332" cy="159" r="92" fill="url(#6wfx18ymyc)"/>
+                        <circle cx="1340" cy="161" r="56" fill="url(#6wfx18ymyc)"/>
+                        <circle cx="1208" cy="189" r="64" fill="url(#6wfx18ymyc)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

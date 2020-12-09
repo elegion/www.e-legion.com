@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="193" height="193" viewbox="0 0 193 193">
+  <defs>
+    <filter id="communication-ok-a" width="133.1%" height="133.1%" x="-14.1%" y="-13.4%" filterUnits="objectBoundingBox">
+      <feOffset dx="4" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="8"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.195367133 0"/>
+    </filter>
+    <rect id="communication-ok-b" width="160.073" height="160.073" x="0" y="0" rx="16.401"/>
+  </defs>
+  <g transform="translate(12 11)" fill="none" fill-rule="evenodd">
+    <use fill="#000" filter="url(#communication-ok-a)" xlink:href="#communication-ok-b"/>
+    <use fill="#FFF" xlink:href="#communication-ok-b"/>
+    <text fill="#000" font-family="Montserrat-Bold, Montserrat" font-size="14.433" font-weight="bold">
+      <tspan x="10.497" y="22.856">Одноклассники</tspan>
+    </text>
+    <circle cx="35.754" cy="126.615" r="25.257" fill="#EC8225"/>
+    <g fill="#FFF" fill-rule="nonzero">
+      <path d="M24.341 114.2a8.366 8.366 0 00.001 11.83 8.366 8.366 0 1011.83-11.83 8.366 8.366 0 00-11.83 0zm8.361 8.36a3.458 3.458 0 11-4.89-4.89 3.458 3.458 0 014.89 4.89z"/>
+      <path d="M42.774 128.4c1.888-2.826 2.212-5.327 2.23-5.46a2.172 2.172 0 00-1.948-2.442 2.304 2.304 0 00-2.491 2.009c-.004.026-.383 2.66-2.86 5.14-2.479 2.476-5.145 2.887-5.17 2.89a2.303 2.303 0 00-2.01 2.491 2.172 2.172 0 002.443 1.947c.135-.017 2.722-.37 5.603-2.335l.063 6.817a2.17 2.17 0 002.248 2.167 2.287 2.287 0 001.547-.674c.42-.42.68-.998.676-1.63l-.123-6.395 6.734-.173c1.235-.017 2.247-1.031 2.261-2.266s-.974-2.222-2.209-2.206l-6.994.119zm-5.069-.754c-.003.004.004-.004 0 0-.003.004.004-.004 0 0z"/>
+    </g>
+  </g>
+</svg>

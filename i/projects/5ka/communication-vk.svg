@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="193" height="193" viewbox="0 0 193 193">
+  <defs>
+    <filter id="communication-vk-a" width="133.1%" height="133.1%" x="-14.1%" y="-13.4%" filterUnits="objectBoundingBox">
+      <feOffset dx="4" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="8"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.195367133 0"/>
+    </filter>
+    <rect id="communication-vk-b" width="160.073" height="160.073" x="0" y="0" rx="16.401"/>
+  </defs>
+  <g transform="translate(12 11.5)" fill="none" fill-rule="evenodd">
+    <use fill="#000" filter="url(#communication-vk-a)" xlink:href="#communication-vk-b"/>
+    <use fill="#FFF" xlink:href="#communication-vk-b"/>
+    <text fill="#000" font-family="Montserrat-Bold, Montserrat" font-size="14.433" font-weight="bold">
+      <tspan x="10.497" y="22.856">ВКонтакте</tspan>
+    </text>
+    <circle cx="35.754" cy="126.615" r="25.257" fill="#4981C0"/>
+    <path fill="#FFF" fill-rule="nonzero" d="M21.267 118.957h3.547c.45 0 .799.298.949.696.45 1.293 1.449 4.127 2.597 6.066 1.549 2.536 2.548 3.481 3.198 3.382.649-.15.45-1.84.45-3.183 0-1.342.149-3.63-.5-4.674l-1-1.442a.496.496 0 01.4-.795h5.695c.55 0 .999.447.999.994v7.21s.25 1.293 1.648-.05c1.399-1.342 2.898-3.828 4.146-6.364l.5-1.194c.15-.348.5-.596.9-.596h3.696c.7 0 1.199.696.949 1.342l-.4 1.044s-1.349 2.686-2.747 4.575c-1.399 1.94-1.699 2.387-1.499 2.884.2.497 3.797 3.829 4.696 5.42.25.447.45.845.65 1.193.349.647-.15 1.492-.9 1.492h-4.196c-.35 0-.7-.199-.85-.497l-.399-.647s-2.548-2.983-4.096-3.928c-1.599-.895-1.549.398-1.549.398v2.635a2 2 0 01-1.998 1.99h-.999s-5.495 0-9.89-6.515c-3.447-5.071-4.596-8.353-4.996-10.243-.1-.596.35-1.193 1-1.193z"/>
+  </g>
+</svg>
