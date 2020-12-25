@@ -1,85 +1,137 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 "use strict";
 
-var Snow = require('./modules/snow');
+var SnowInteractive = require('./modules/snow-interactive');
 
 function happyNewYear() {
-  new Snow(document.querySelector('#snow'));
+  new SnowInteractive(document.querySelector('#snow'));
 }
 
 document.addEventListener("DOMContentLoaded", function () {
   happyNewYear();
 });
 
-},{"./modules/snow":2}],2:[function(require,module,exports){
+},{"./modules/snow-interactive":2}],2:[function(require,module,exports){
 "use strict";
 
-function Snow(c) {
-  var $ = c.getContext("2d");
-  var w = c.width = window.innerWidth;
-  var h = c.height = c.parentElement.offsetHeight;
+function SnowInteractive(c) {
+    (function () {
+        var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function (callback) {
+            window.setTimeout(callback, 1000 / 60);
+        };
+        window.requestAnimationFrame = requestAnimationFrame;
+    })();
 
-  Snowy();
-  function Snowy() {
-    var snow,
-        arr = [];
-    var num = 600,
-        tsc = 1,
-        sp = .5;
-    var sc = 1.3,
-        t = 0,
-        mv = 20,
-        min = 1;
-    for (var i = 0; i < num; ++i) {
-      snow = new Flake();
-      snow.y = Math.random() * (h + 50);
-      snow.x = Math.random() * w;
-      snow.t = Math.random() * (Math.PI * 2);
-      snow.sz = 100 / (10 + Math.random() * 100) * sc;
-      snow.sp = Math.pow(snow.sz * .8, 2) * .15 * sp;
-      snow.sp = snow.sp < min ? min : snow.sp;
-      arr.push(snow);
+    var flakes = [],
+        canvas = c,
+        ctx = canvas.getContext("2d"),
+        flakeCount = 400,
+        mX = -100,
+        mY = -100;
+
+    setSize();
+
+    function setSize() {
+        canvas.width = window.innerWidth;
+        var height = canvas.parentNode.offsetHeight;
+        canvas.height = height;
     }
 
-    go();
-    function go() {
-      window.requestAnimationFrame(go);
-      $.clearRect(0, 0, w, h);
-      $.fillStyle = '#1c273a';
-      $.fillRect(0, 0, w, h);
-      $.fill();
-      for (var i = 0; i < arr.length; ++i) {
-        var f = arr[i];
-        f.t += .05;
-        f.t = f.t >= Math.PI * 2 ? 0 : f.t;
-        f.y += f.sp;
-        f.x += Math.sin(f.t * tsc) * (f.sz * .3);
-        if (f.y > h + 50) f.y = -10 - Math.random() * mv;
-        if (f.x > w + mv) f.x = -mv;
-        if (f.x < -mv) f.x = w + mv;
-        f.draw();
-      }
+    function snow() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        for (var i = 0; i < flakeCount; i++) {
+            var flake = flakes[i],
+                x = mX,
+                y = mY,
+                minDist = 150,
+                x2 = flake.x,
+                y2 = flake.y;
+
+            var dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y)),
+                dx = x2 - x,
+                dy = y2 - y;
+
+            if (dist < minDist) {
+                var force = minDist / (dist * dist),
+                    xcomp = (x - x2) / dist,
+                    ycomp = (y - y2) / dist,
+                    deltaV = force / 2;
+
+                flake.velX -= deltaV * xcomp;
+                flake.velY -= deltaV * ycomp;
+            } else {
+                flake.velX *= .98;
+                if (flake.velY <= flake.speed) {
+                    flake.velY = flake.speed;
+                }
+                flake.velX += Math.cos(flake.step += .05) * flake.stepSize;
+            }
+
+            ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";
+            flake.y += flake.velY;
+            flake.x += flake.velX;
+
+            if (flake.y >= canvas.height || flake.y <= 0) {
+                reset(flake);
+            }
+
+            if (flake.x >= canvas.width || flake.x <= 0) {
+                reset(flake);
+            }
+
+            ctx.beginPath();
+            ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
+            ctx.fill();
+        }
+        requestAnimationFrame(snow);
+    };
+
+    function reset(flake) {
+        flake.x = Math.floor(Math.random() * canvas.width);
+        flake.y = 0;
+        flake.size = Math.random() * 3 + 2;
+        flake.speed = Math.random() * 1 + 0.5;
+        flake.velY = flake.speed;
+        flake.velX = 0;
+        flake.opacity = Math.random() * 0.5 + 0.3;
     }
 
-    function Flake() {
-      this.draw = function () {
-        this.g = $.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.sz);
-        this.g.addColorStop(0, 'hsla(255,255%,255%,1)');
-        this.g.addColorStop(1, 'hsla(255,255%,255%,0)');
-        $.moveTo(this.x, this.y);
-        $.fillStyle = this.g;
-        $.beginPath();
-        $.arc(this.x, this.y, this.sz, 0, Math.PI * 2, true);
-        $.fill();
-      };
-    }
-  }
+    function init() {
+        for (var i = 0; i < flakeCount; i++) {
+            var x = Math.floor(Math.random() * canvas.width),
+                y = Math.floor(Math.random() * canvas.height),
+                size = Math.random() * 3 + 2,
+                speed = Math.random() * 1 + 0.5,
+                opacity = Math.random() * 0.5 + 0.3;
 
-  window.addEventListener('resize', function () {
-    c.width = w = window.innerWidth;
-  }, false);
+            flakes.push({
+                speed: speed,
+                velY: speed,
+                velX: 0,
+                x: x,
+                y: y,
+                size: size,
+                stepSize: Math.random() / 30,
+                step: 0,
+                opacity: opacity
+            });
+        }
+
+        snow();
+    };
+
+    canvas.addEventListener("mousemove", function (e) {
+        mX = e.clientX, mY = e.clientY;
+    });
+
+    window.addEventListener("resize", function () {
+        setSize();
+    });
+
+    init();
 }
 
-module.exports = Snow;
+module.exports = SnowInteractive;
 
 },{}]},{},[1]);
