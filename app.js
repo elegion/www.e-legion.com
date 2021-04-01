@@ -1692,7 +1692,7 @@ function Projects(container) {
 
     // Set initial year filter from hashbang.
     var params = utils.parseHashBang(window.location.hash);
-    if (params) {
+    if (params && periodSelectDefault && periodSelectDefaultLabel) {
       selectedPeriod = params[0];
       for (var i = 0, len = periodSelectDefault.length; i < len; i++) {
         var _option = periodSelectDefault[i];
